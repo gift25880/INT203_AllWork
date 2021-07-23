@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizizz — The world’s most engaging learning platform</title>
+    <link rel="icon" href="https://cf.quizizz.com/img/favicon/favicon-32x32.png">
+
+    <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
+    <!-- Using via Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- https://tailwindcss.com/docs/installation -->
+    <!-- Using Tailwind via CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+    <link href="./style.css" rel="stylesheet" type="text/css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a7ef51f3aa.js" crossorigin="anonymous"></script>
+
+    <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
+    <!-- Vue CDN -->
+    <script src="https://unpkg.com/vue@next"></script>
+
+</head>
+
+<body class="w-screen overflow-x-hidden">
+    <div id="navbar" class="border-b-2 border-gray-100 sticky top-0 bg-white z-50">
+        <div class="container mx-auto">
+            <div class="mx-5">
+                <div class="flex justify-between text-xl items-center h-16">
+                    <div>
+                        <a href="./index.html">
+                            <img src="./images/quizizz-logo.png" class="w-28">
+                        </a>
+                    </div>
+                    <div class="ml-32">
+                        <a href="https://quizizz.com/forwork?ref=header_tab" class="px-4 py-2 button2 rounded-lg hover:rounded-lg">For Work</a>
+                        <a href="https://quizizz.com/teachers?ref=header_tab" class="px-4 py-2 button2 rounded-lg hover:rounded-lg">For Teachers</a>
+                    </div>
+                    <div>
+                        <a href="https://quizizz.com/join" class="mx-1 px-4 py-2 button2 rounded-lg hover:rounded-lg">Enter code</a>
+                        <a href="https://quizizz.com/signup?source=landing_header" class="px-5 py-3 rounded-lg text-white button1">
+                            Sign up &nbsp;
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="landing1">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-3">
+                <div class="ml-16">
+                    <h1 class="text-6xl font-bold text-purple mt-20">
+                        The 100%
+                        <br>
+                        engagement
+                        <br>
+                        platform
+                    </h1>
+                    <br>
+                    <p class="text-lg text-purplegray">
+                        Find and create free gamified quizzes and
+                        <br>
+                        interactive lessons to engage any learner.
+                    </p>
+                    <br>
+                    <br>
+                    <a href="https://quizizz.com/signup?source=landing_hero_cta"
+                        class="button3 text-white text-xl font-semibold px-8 py-5 rounded-lg transition duration-150 ease">
+                        Get started &nbsp;
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                    <a href="https://quizizz.com/login"
+                        class="button4 text-xl font-semibold px-8 py-5 ml-3 rounded-lg hover:rounded-lg hover:bg-gray-200">
+                        Log In &nbsp;
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                    <div class="mt-40 flex justify-start items-center h-20 text-purple2 border px-8 rounded-lg mb-8"
+                        style="border-color: rgba(0,0,0,0.1);">
+                        <i class="fas fa-globe-asia text-6xl"></i>
+                        <p class="ml-4 font-semibold">
+                            Used by more than 50 million
+                            <br>
+                            people around the world.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-span-2 flex flex-wrap content-end w-5/6">
+                    <img src="./images/bg1.png" class="ml-12">
+                </div>
+
+            </div>
+        </div>
+        <div id="ribbon" style="background-color: #fdf6e5; z-index: -1;"
+            class="w-screen h-72 transform -skew-y-3 absolute top-2/3"></div>
+    </div>
+    <div id="lovedByEducator" class="bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold pt-20">
+                Loved by educators in over 50% of U.S. schools and
+                <br>
+                150 countries.
+            </h2>
+            <p class="text-purplegray text-lg mt-4">
+                Here’s what they have to say...
+            </p>
+            <div class="w-2/3 bg-red-500 mx-auto rounded-lg mt-14" style="background-color: #fdf6e5;">
+                <p class="text-2xl font-semibold pt-12 pb-24">
+                    “One of our math teachers started using Quizizz Lessons this week
+                    <br>
+                    and it was a game changer for her and her students.”
+                </p>
+            </div>
+            <div class="relative -top-10">
+                <div class="flex justify-center items-center">
+                    <img src="./images/teacher1.png" class="rounded-full w-14 h-14 filter-red border-2 border-red-600">
+                    <img src="./images/teacher2.png" class="rounded-full w-20 h-20 mx-4 border-2 border-yellow-400">
+                    <img src="./images/teacher3.png"
+                        class="rounded-full w-14 h-14 filter-blue border-2 border-blue-500">
+                </div>
+                <p class="font-semibold text-purplegray mt-2">Sean Scanlon</p>
+                <p class="text-purplegray">Director of Curriculum & Instruction</p>
+            </div>
+            <hr class="w-40 border border-gray-300 mx-auto mt-4">
+            <p class="text-purplegray text-lg mt-10">
+                We’re also used in businesses and nonprofits ranging from startups to the Fortune 500.
+            </p>
+            <div class="grid grid-cols-6 mt-4 mx-10 mb-16">
+                <div class="w-3/4">
+                    <img src="./images/anthem.png">
+                </div>
+                <div class="w-3/4">
+                    <img src="./images/amazon.png">
+                </div>
+                <div class="w-3/4">
+                    <img src="./images/pg.png">
+                </div>
+                <div class="w-3/4">
+                    <img src="./images/rings.png">
+                </div>
+                <div class="w-3/4">
+                    <img src="./images/capitalOne.png">
+                </div>
+                <div class="w-3/4">
+                    <img src="./images/virgin-media.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="anyDevice" class="text-center bg-yellow">
+        <h2 class="text-3xl font-semibold pt-20">
+            They engage from any device.
+            <br>
+            You get instant feedback.
+        </h2>
+        <p class="text-purplegray text-lg mt-2">
+            Participants see questions on their own devices and you get great data—no grading required.
+        </p>
+        <br>
+        <div class="mt-4">
+            <a href="https://quizizz.com/signup?source=landing_demo_vid" class="px-5 py-3 rounded-lg text-white button1 text-xl">
+                Try it for free &nbsp;
+                <i class="fas fa-angle-right"></i>
+            </a>
+        </div>
+        <div class="mt-5 w-3/5 mx-auto">
+            <video autoplay loop>
+                <source src="./images/devices.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p class="text-purplegray text-lg mt-2 pb-14">
+            Participants can join from any device with a web browser and use our iPhone and Android Apps.
+        </p>
+    </div>
+    <div id="asynchronous" class="pb-8">
+        <div class="text-center">
+            <h2 class="text-3xl font-semibold pt-20">
+                Everything you need for mastery and engagement
+            </h2>
+            <p class="text-purplegray text-lg mt-2 pb-14">
+                Introduce concepts, check for understanding, get instant insights, and more.
+            </p>
+        </div>
+        <div class="grid grid-cols-8 text-center mt-4">
+            <div class="col-start-2 col-span-2">
+                <a class="bg-white p-4 rounded-lg shadow-lg border">
+                    <i class="fas fa-chalkboard-teacher text-2xl text-gray-400"></i>
+                </a>
+                <p class="font-semibold text-gray-400 text-xl mt-10">Live Engagement</p>
+                <hr class="border-gray-300 mt-8">
+            </div>
+            <div class="col-span-2">
+                <a class="bg-white p-4 rounded-lg shadow-lg border">
+                    <i class="fas fa-clock text-2xl text-purple"></i>
+                </a>
+                <p class="font-semibold text-purple text-xl mt-10">Asynchronous Learning</p>
+                <hr class="border-gray-300 mt-8 border-purple">
+            </div>
+            <div class="col-span-2 col-end">
+                <a class="bg-white p-4 rounded-lg shadow-lg border">
+                    <i class="fas fa-chart-bar text-2xl text-gray-400"></i>
+                </a>
+                <p class="font-semibold text-gray-400 text-xl mt-10">Insights and Reporting</p>
+                <hr class="border-gray-300 mt-8">
+            </div>
+        </div>
+        <div class="grid grid-cols-2 container mx-auto">
+            <div>
+                <h3 class="text-purple text-3xl font-semibold mt-24 ml-16">Learn anytime and anywhere</h3>
+                <ul class="text-purplegray text-lg list-disc mt-10 ml-20">
+                    <li>
+                        Set a deadline so your students can learn
+                        <br>
+                        on their own time or create an evergreen link.
+                    </li>
+                    <br>
+                    <li>
+                        Share via messaging tools, email, or your LMS.
+                        <br>
+                        Participants join from any device.
+                    </li>
+                    <br>
+                    <li>
+                        Retakes, flashcards and other tools enable
+                        <br>
+                        independent study and promote mastery.
+                    </li>
+                </ul>
+                <div class="mt-12 ml-16">
+                    <a href="#" class="px-5 py-3 rounded-lg text-white button1 text-xl">
+                        Try it out &nbsp;
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img src="./images/async.jpg" class="w-11/12">
+            </div>
+        </div>
+    </div>
+    <div id="learnMore" class="text-center bg-gradient">
+        <div class="container mx-auto ">
+            <h2 class="text-3xl font-semibold pt-20 text-white">Learn more about using Quizizz...</h2>
+            <div class="grid grid-cols-2 gap-12 w-9/12 mx-auto mt-12 pb-20">
+                <div class="learn-more-left rounded-lg">
+                    <img src="./images/learnmore1.png" class="w-7/12 mx-auto">
+                    <h3 class="text-3xl font-semibold">At School</h3>
+                    <p class="text-lg text-purplegray">K-12 through College.</p>
+                    <div class="mt-14 mb-12">
+                        <a href="https://quizizz.com/teachers?ref=lm_card" class="button5 px-5 py-3 rounded-lg text-white text-xl">
+                            Learn more &nbsp;
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="learn-more-right rounded-lg">
+                    <img src="./images/learnmore2.png" class="w-7/12 mx-auto">
+                    <h3 class="text-3xl font-semibold">For Work</h3>
+                    <p class="text-lg text-purplegray">Businesses and nonprofits of all sizes.</p>
+                    <div class="mt-14 mb-12">
+                        <a href="https://quizizz.com/forwork?ref=lm_card" class="button6 px-5 py-3 rounded-lg text-white text-xl">
+                            Learn more &nbsp;
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gettingStarted" class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold pt-20">Getting started is free and easy</h2>
+        <div class="grid grid-cols-3 gap-4 w-11/12 mx-auto mt-10 mb-32">
+            <div class="rounded-lg border-4 border-yellow-100 bg-yellow">
+                <div
+                    class="bg-white rounded-full w-14 h-14 border p-2 mx-auto text-3xl font-semibold text-purple shadow-lg mt-10">
+                    1
+                </div>
+                <h3 class="text-3xl font-semibold text-purple mt-8">
+                    Add quiz and poll
+                    <br>
+                    questions.
+                </h3>
+                <img src="./images/getStart1.png" class="w-10/12 mx-auto -mt-10 mb-2">
+            </div>
+            <div class="rounded-lg border-4 border-yellow-100 bg-yellow">
+                <div
+                    class="bg-white rounded-full w-14 h-14 border p-2 mx-auto text-3xl font-semibold text-purple shadow-lg mt-10">
+                    2
+                </div>
+                <h3 class="text-3xl font-semibold text-purple mt-8">
+                    Participants engage
+                    <br>
+                    from any device.
+                </h3>
+                <img src="./images/getStart2.png" class="w-10/12 mx-auto -mt-10 mb-2">
+            </div>
+            <div class="rounded-lg border-4 border-yellow-100 bg-yellow">
+                <div
+                    class="bg-white rounded-full w-14 h-14 border p-2 mx-auto text-3xl font-semibold text-purple shadow-lg mt-10">
+                    3
+                </div>
+                <h3 class="text-3xl font-semibold text-purple mt-8">
+                    Get instant
+                    <br>
+                    feedback.
+                </h3>
+                <img src="./images/getStart3.png" class="w-10/12 mx-auto -mt-10 mb-2">
+            </div>
+        </div>
+    </div>
+    <div id="explore" class="container mx-auto mb-16">
+        <h2 class="text-3xl font-semibold text-center">Explore millions of teacher-created quizzes</h2>
+        <div class="grid grid-cols-3 mt-24">
+            <div class="ml-44">
+                <div class="flex">
+                    <div class="border-2 w-1/5 rounded-lg shadow-xl z-20 absolute bg-white">
+                        <img src="./images/creative1.jpg" class="w-full rounded-lg">
+                        <div class="flex justify-center -mt-5">
+                            <div
+                                class="text-xl font-semibold text-gray-600 bg-gray-200 px-3 py-0.5 rounded-lg border border-gray-300">
+                                20Q</div>
+                            <div class="text-xl font-semibold bg-gray-200 px-3 py-0.5 rounded-lg border border-gray-300 ml-20"
+                                style="color: #8954c0;">
+                                7.5k plays
+                            </div>
+                        </div>
+                        <h4 class="text-2xl font-semibold ml-4 mt-4 mb-20">Musical Instruments</h4>
+                    </div>
+                    <div class="border-2 w-1/5 rounded-lg shadow-xl z-10 absolute bg-white transform -rotate-6 -ml-8">
+                        <img src="./images/creative2.jpg" class="w-full rounded-lg mb-28">
+                    </div>
+                    <div class="border-2 w-1/5 rounded-lg shadow-xl z-0 absolute bg-white transform rotate-6 ml-8">
+                        <img src="./images/creative3.jpg" class="w-full rounded-lg mb-36">
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-2 ml-36 mt-3">
+                <div>
+                    <a href="https://quizizz.com/admin/English-and-Language-Arts/1"
+                        class="button7 px-5 py-3 rounded-lg text-xl font-semibold border-2 border-gray-100 shadow text-black hover:text-white">
+                        English and Language Arts
+                    </a>
+                    <a href="https://quizizz.com/admin/Mathematics/2"
+                        class="button8 px-5 py-3 rounded-lg text-xl font-semibold border-2 border-gray-100 shadow ml-5 text-black hover:text-white">
+                        Mathematics
+                    </a>
+                </div>
+                <br>
+                <div class="mt-8">
+                    <a href="https://quizizz.com/admin/Social-Studies/3"
+                        class="button9 px-5 py-3 rounded-lg text-xl font-semibold border-2 border-gray-100 shadow text-black hover:text-white">
+                        Social Studies
+                    </a>
+                    <a href="https://quizizz.com/admin/Science/4"
+                        class="button10 px-5 py-3 rounded-lg text-xl font-semibold border-2 border-gray-100 shadow ml-5 text-black hover:text-white">
+                        Science
+                    </a>
+                    <a href="https://quizizz.com/admin/World-Languages/5"
+                        class="button11 px-5 py-3 rounded-lg text-xl font-semibold border-2 border-gray-100 shadow ml-5 text-black hover:text-white">
+                        World Languages
+                    </a>
+                </div>
+                <br>
+                <div class="mt-8">
+                    <a href="https://quizizz.com/admin/Creative-Arts/6"
+                        class="button7 px-5 py-3 rounded-lg text-xl font-semibold border-2 border-gray-100 shadow text-black hover:text-white">
+                        Creative Arts
+                    </a>
+                    <a href="https://quizizz.com/admin/Computer-Science-and-Skills/9"
+                        class="button9 px-5 py-3 rounded-lg text-xl font-semibold border-2 border-gray-100 shadow ml-5 text-black hover:text-white">
+                        Computer Science and Skills
+                    </a>
+                </div>
+                <br>
+                <div class="mt-8">
+                    <a href="https://quizizz.com/admin/Career-and-Technical-Education/8"
+                        class="button10 px-5 py-3 rounded-lg text-xl font-semibold border-2 border-gray-100 shadow text-black hover:text-white">
+                        Career and Technical Education
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="ready" class="bg-yellow text-center">
+        <div class="grid grid-cols-3">
+            <div>
+                <img src="./images/ready1.png" class="w-3/5">
+            </div>
+            <div>
+                <h2 class="text-4xl text-purple font-semibold mt-16">
+                    Ready for meaningful
+                    <br>
+                    engagement?
+                </h2>
+                <br>
+                <div class="mt-8">
+                    <a href="https://quizizz.com/signup?source=landing_ftr_cta"
+                        class="button3 text-white text-xl font-semibold px-8 py-5 rounded-lg transition duration-150 ease">
+                        Get started &nbsp;
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-end">
+                <img src="./images/ready2.png" class="w-3/5">
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="grid grid-cols-6 text-white text-base pt-16 pb-20" style="background-color:  #461b42;">
+            <div class="col-start-2">
+                <p class="opacity-50">© 2021 Quizizz Inc.</p>
+                <p class="text-sm font-semibold mt-5">
+                    Follow us
+                    <a href="https://twitter.com/quizizz">
+                        <i class="fab fa-twitter text-2xl ml-5 transform scale-100 hover:scale-125 transition ease"></i>
+                    </a>
+                    <a href="https://facebook.com/quizizz">
+                        <i class="fab fa-facebook text-2xl mx-3 transform scale-100 hover:scale-125 transition ease"></i>
+                    </a>
+                    <a href="https://instagram.com/quizizz">
+                        <i class="fab fa-instagram text-2xl transform scale-100 hover:scale-125 transition ease"></i>
+                    </a>
+                </p>
+            </div>
+            <div>
+                <ul>
+                    <li class="no-underline hover:underline">
+                        <a href="https://blog.quizizz.com/">
+                            The Quizizz Blog
+                        </a>
+                    </li>
+                    <li class="no-underline hover:underline mt-3">
+                        <a href="https://quizizz.com/resources">
+                            Teacher Resources
+                        </a>
+                    </li>
+                    <li class="no-underline hover:underline mt-3">
+                        <a href="https://quizizz.zendesk.com/hc/en-us">
+                            Help Center
+                        </a>
+                    </li>
+                    <li class="no-underline hover:underline mt-3">
+                        <a href="https://quizizz.com/business">
+                            Quizizz for Work
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="no-underline hover:underline">
+                        <a href="https://quizizz.com/tos">
+                            Terms of Service
+                        </a>
+                    </li>
+                    <li class="no-underline hover:underline mt-3">
+                        <a href="https://quizizz.com/privacy">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li class="no-underline hover:underline mt-3">
+                        <a href="https://quizizz.com/careers">
+                            Careers
+                        </a>
+                    </li>
+                    <li class="no-underline hover:underline mt-3">
+                        <a href="https://quizizz.com/about">
+                            About Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p class="text-sm">Download Quizizz mobile apps</p>
+                <a href="https://share.quizizz.com/nz4P08MhCM">
+                    <img src="./images/apple.png" class="mb-4 mt-5 transform scale-100 hover:scale-110 transition ease duration-150">
+                </a>
+                <a href="https://share.quizizz.com/EBAH8OlhCM">
+                    <img src="./images/google.png" class="transform scale-100 hover:scale-110 transition ease duration-150">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- my main.js -->
+    <script src="./main.js"></script>
+</body>
+
+</html>

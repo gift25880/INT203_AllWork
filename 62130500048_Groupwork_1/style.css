@@ -1,0 +1,136 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.button1 {
+    background-color: #5e2657;
+}
+
+.button1:hover {
+    background-color: #381535;
+}
+
+.button2 {
+    background-color: white;
+    color: #461A42;
+}
+
+.button2:hover {
+    background-color: #fdf6e5;
+}
+
+.text-purple {
+    color: #461A42;
+}
+
+.text-purple2 {
+    color: #5d2057;
+}
+
+.text-purplegray {
+    color: #73747E;
+}
+
+.button3 {
+    background-color: #5e2657;
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 10%), 0px 4px 0px #381535;
+}
+
+.button3:hover {
+    box-shadow: none;
+    padding-top: 1rem;
+}
+
+.button4 {
+    background-color: white;
+    color: #461A42;
+}
+
+.button4:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.filter-red {
+    filter: invert(40%) grayscale(100%) brightness(80%) sepia(80%) hue-rotate(-50deg) saturate(300%);
+}
+
+.filter-blue {
+    filter: grayscale(100%) brightness(80%) sepia(80%) hue-rotate(-220deg) saturate(700%) contrast(0.8);
+}
+
+.border-purple {
+    border-color: #461A42;
+}
+
+.bg-gradient {
+    background: linear-gradient(90deg, #572842 0%, #4e2150 100%);
+}
+
+.bg-yellow {
+    background-color: #fffaf2;
+}
+
+.learn-more-left {
+    background-color: #fefaf2;
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 10%), 0px 4px 0px #f0a120;
+}
+
+.button5 {
+    background-color: #f0a120;
+}
+
+.button5:hover {
+    background-color: #ce841e;
+}
+.learn-more-right {
+    background-color: #ede6f6;
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 10%), 0px 4px 0px #8854e0;
+}
+
+.button6 {
+    background-color: #8854e0;
+}
+
+.button6:hover {
+    background-color: #6c4298;
+}
+
+.button7 {
+    background-color: #fcfcfc;
+}
+
+.button7:hover {
+    background-color: #9a4492;
+}
+
+.button8 {
+    background-color: #fcfcfc;
+}
+
+.button8:hover {
+    background-color: #2f70ae;
+}
+
+.button9 {
+    background-color: #fcfcfc;
+}
+
+.button9:hover {
+    background-color: #4c9ea7;
+}
+
+.button10 {
+    background-color: #fcfcfc;
+}
+
+.button10:hover {
+    background-color: #efa929;
+}
+
+.button11 {
+    background-color: #fcfcfc;
+}
+
+.button11:hover {
+    background-color: #d5546d;
+}
